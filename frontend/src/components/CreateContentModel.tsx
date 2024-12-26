@@ -1,5 +1,6 @@
 import { CrossIcon } from "../icons/CrossIcon";
 import { Button } from "./Button";
+import { Input } from "./Input";
 
 export function CreateContentModel({ open, onClose }: { open: boolean, onClose: () => void }) {
   return (
@@ -35,21 +36,3 @@ export function CreateContentModel({ open, onClose }: { open: boolean, onClose: 
   );
 }
 
-function Input({
-  onChange,
-  placeholder,
-}: {
-  onChange: () => void;
-  placeholder: string;
-}) {
-  return (
-    <div>
-      <input
-        placeholder={placeholder}
-        type={"text"}
-        className="px-2 w-full  py-1 mb-3 border border-black rounded focus:outline-none"
-        onChange={onChange}
-      />
-    </div>
-  );
-}

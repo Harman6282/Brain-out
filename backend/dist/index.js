@@ -22,8 +22,12 @@ const auth_middleware_1 = require("./middlewares/auth.middleware");
 const content_model_1 = require("./models/content.model");
 const link_model_1 = require("./models/link.model");
 const utils_1 = require("./utils");
+const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
+app.use((0, cors_1.default)({
+    origin: 'http://localhost:5173',
+}));
 app.post("/api/v1/signup", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     //? zod validation and hash the password
     const { username, password } = req.body;

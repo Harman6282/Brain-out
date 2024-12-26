@@ -9,8 +9,12 @@ import { authMiddleware } from "./middlewares/auth.middleware";
 import { ContentModel } from "./models/content.model";
 import { LinkModel } from "./models/link.model";
 import { random } from "./utils";
+import cors from "cors"
 const app = express();
 app.use(express.json());
+app.use(cors({
+  origin: 'http://localhost:5173',
+}));
 
 app.post("/api/v1/signup", async (req, res) => {
   //? zod validation and hash the password

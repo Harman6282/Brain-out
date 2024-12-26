@@ -6,6 +6,8 @@ interface ButtonProps {
   text: string;
   startIcon?: ReactElement;
   endIcon?: ReactElement;
+  fullWidth?: boolean;
+  loading? :boolean;
   onClick: () => void;
 }
 
@@ -22,12 +24,12 @@ const sizeStyles = {
   "lg": "py-3 px-6 text-lg",
 };
 
-export const Button = ({text, onClick, size, variant,startIcon, endIcon}: ButtonProps) => {
+export const Button = ({text, onClick, size, variant,startIcon, endIcon, fullWidth , loading}: ButtonProps) => {
   return (
     <button
     onClick={onClick}
       className={`${variantStyles[variant]} ${defaultStyles}
-       ${sizeStyles[size]}`}
+       ${sizeStyles[size]} ${fullWidth ? "w-full flex justify-center items-center" : ""}` } disabled={loading}
     >
      {startIcon ? <div className="">{startIcon}</div> : null} {text} {endIcon}
     </button>
