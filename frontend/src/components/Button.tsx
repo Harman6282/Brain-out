@@ -11,10 +11,10 @@ interface ButtonProps {
 
 const variantStyles = {
   primary: "bg-purple-600 text-white",
-  secondary: "bg-purple-300 text-purple-600",
+  secondary: "bg-purple-200 text-purple-600",
 };
 
-const defaultStyles = "rounded-md p-4 flex items-center gap-1";
+const defaultStyles = "rounded-md px-4 py-1 flex items-center gap-1";
 
 const sizeStyles = {
   "sm": "py-1 px-2 text-sm",
@@ -22,13 +22,14 @@ const sizeStyles = {
   "lg": "py-3 px-6 text-lg",
 };
 
-export const Button = (props: ButtonProps) => {
+export const Button = ({text, onClick, size, variant,startIcon, endIcon}: ButtonProps) => {
   return (
     <button
-      className={`${variantStyles[props.variant]} ${defaultStyles}
-       ${sizeStyles[props.size]}`}
+    onClick={onClick}
+      className={`${variantStyles[variant]} ${defaultStyles}
+       ${sizeStyles[size]}`}
     >
-     {props.startIcon ? <div className="">{props.startIcon}</div> : null} {props.text} {props.endIcon}
+     {startIcon ? <div className="">{startIcon}</div> : null} {text} {endIcon}
     </button>
   );
 };
