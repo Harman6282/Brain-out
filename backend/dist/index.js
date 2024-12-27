@@ -80,6 +80,7 @@ app.get("/api/v1/content", auth_middleware_1.authMiddleware, (req, res) => __awa
 }));
 app.post("/api/v1/content", auth_middleware_1.authMiddleware, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { link, type, title } = req.body;
+    console.log(link, type, title);
     yield content_model_1.ContentModel.create({
         title,
         link,
@@ -88,7 +89,7 @@ app.post("/api/v1/content", auth_middleware_1.authMiddleware, (req, res) => __aw
         userId: req.userId,
         tags: [],
     });
-    res.json({ message: "Content created successfully" });
+    res.json({ message: "Content added" });
 }));
 app.delete("/api/v1/content/:contentId", auth_middleware_1.authMiddleware, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     //@ts-ignore

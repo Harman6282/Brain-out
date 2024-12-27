@@ -82,7 +82,9 @@ app.get("/api/v1/content", authMiddleware, async (req, res) => {
 app.post("/api/v1/content", authMiddleware, async (req, res) => {
   const { link, type, title } = req.body;
 
-  await ContentModel.create({
+  console.log(link, type, title);
+
+  const newContent = await ContentModel.create({
     title,
     link,
     type,
@@ -91,7 +93,7 @@ app.post("/api/v1/content", authMiddleware, async (req, res) => {
     tags: [],
   });
 
-  res.json({ message: "Content created successfully" });
+  res.json({ message: "Content added" , newContent });
 });
 
 app.delete("/api/v1/content/:contentId", authMiddleware, async (req, res) => {

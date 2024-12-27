@@ -13,6 +13,10 @@ const contentSchema = new Schema({
             ref: 'Tag'
         }
     ],
+    type:{
+        type: String,
+        required: true
+    },
     userId:{
         type: mongoose.Types.ObjectId,
         ref: 'User',

@@ -1,0 +1,47 @@
+[33mcommit a72ccf612ee3d034161f11bc6976586c98265e25[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Thu Dec 26 22:37:38 2024 +0530
+
+    connecting frontend backend
+
+[33mcommit ee5b77b7207a541f7aace38a89ff90d65f06be84[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Thu Dec 26 15:36:53 2024 +0530
+
+    frontend
+
+[33mcommit 2e0890aa97ccccc9cfb5173b1a77ed17f7749373[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Wed Dec 25 14:43:27 2024 +0530
+
+    add button ui
+
+[33mcommit 1c8231c9d16884dee26bda33b2ae2a929de1ba2c[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Wed Dec 25 12:30:19 2024 +0530
+
+    brain-out frontend
+
+[33mcommit eeb093bdaf518b49cbfc52865dbf0b6cd0b52205[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Sun Dec 22 17:04:56 2024 +0530
+
+    add,get,delete content
+
+[33mcommit 2dafb9114f006dc0d2316e2a0a6bc593a4733c63[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Sun Dec 22 14:39:43 2024 +0530
+
+    basic routes and sign up/in
+
+[33mcommit 3d599b9e6ffb81010a4c17883eb4bfc86c49b800[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Sat Dec 21 22:08:23 2024 +0530
+
+    second commit
+
+[33mcommit c39d7156f95aa2c2ee29f1ffa86f88ca7e6949ca[m
+Author: Harman6282 <harmans6282@gmail.com>
+Date:   Sat Dec 21 20:26:51 2024 +0530
+
+    project setup
